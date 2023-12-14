@@ -23,9 +23,11 @@ window.addEventListener("load", () => {
 });
 
 submitBtn.addEventListener("click", (e) => {
-    e.preventDefault();
+  e.preventDefault();
+  
+  let emailValid =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  if (input.value !== "") {
+  if (input.value !== "" && input.value.match(emailValid)) {
     let userEmail = input.value;
     console.log(userEmail);
 
