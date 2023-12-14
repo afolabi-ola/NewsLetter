@@ -1,0 +1,71 @@
+.cont-2{
+    background-color: white;
+    width: 350px;
+    height: 330px;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 150px;
+    padding: 25px;
+    border-radius: 10px;
+    display: none;
+
+    
+    
+    
+
+}
+.cont-2 h1{
+    color: hsl(234, 29%, 20%);
+
+}
+.icon-success img  {
+    width: 40px;
+}
+.dismiss{
+    width: 300px;
+    height: 40px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+.dismiss:hover{
+    background:hsl(4, 100%, 67%);
+    color:white ;
+}
+.comfirm p{
+    font-size: 14px;
+    padding: 20px 0px;
+    color: hsl(234, 29%, 20%);
+
+    
+
+}
+@media screen and (max-width:976px) {
+   .cont-2{
+    margin-left: 40%;
+    margin-top:20px;
+    height: 100vh;
+    /* padding-top: 80px; */
+
+    
+   } 
+   .comfirm{
+    padding-top: 20px;
+   }
+   .dismiss{
+    margin-top: 90px;
+    cursor: pointer;
+   }
+}
+@media screen and (max-width:590px) {
+    .cont-2{
+        margin: 0;
+        width: 100%;
+    }
+    .dismiss{
+        margin-top: 250px;
+    }
+}

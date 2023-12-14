@@ -1,0 +1,228 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(234, 29%, 20%);
+    position: absolute;
+    font-family: calibri;
+    /* width: 100%;
+    height: 100vh; */
+    
+}
+.cont-1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    right: 20%;
+    /* align-items: center; */
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 30px;
+    /* display: none; */
+}
+
+.stay{
+    padding: 30px;
+    width: 400px;
+    justify-content: center;
+    place-items: center;
+
+}
+.img{
+    background-image: url(illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 550;
+    margin: 20px;
+    border-radius: 25px;    
+}
+@media screen and (max-width:1144px) {
+    
+    .cont-1{
+        flex-direction: column-reverse;
+        width:350px;
+        margin: 250px;
+        height: 800px;
+        left: 0%;
+        right: 0%;
+        overflow-x: hidden;
+        
+    }
+    
+    .img{
+        background-image: url(illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 350px;
+        height: 50%;
+        margin: 0px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+}
+@media screen and (max-width:878px) {
+    .cont-1{
+        margin: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}
+.updated{
+    color:  hsl(234, 29%, 20%) ;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.join{
+    margin-top: 10px;
+    font-size: 13px;
+    color:   hsl(234, 29%, 20%);
+    margin-bottom: 10px;
+}
+.product{
+    font-size: 14px;
+    color:   hsl(234, 29%, 20%);
+    padding-top: 10px;
+}
+.product .on{
+    display: flex;
+    margin-right: 10px;
+    padding-top: 5px;
+
+}
+.on p{
+    padding: 10px;
+    font-size: 12px;
+}
+.email{
+    font-size: 13px;
+}
+.email-invalid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* padding: 10px; */
+}
+.invalid{
+    font-size: 13px;
+    color:hsl(4, 100%, 67%);
+    margin-right: 30px;
+    display: none;
+    
+}
+.input{
+    margin: 20px 0px ;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 10px;
+}
+.input:hover{
+    background-color: transparent;
+    outline: 1px solid hsl(235, 18%, 26%);
+}
+#email::placeholder{
+    color: hsl(231, 7%, 60%);
+}
+.submit{
+     margin: 5px 0px ;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    background-color:   hsl(234, 29%, 20%);
+    color: white;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    background:hsl(4, 100%, 67%);
+    color:white ;
+}
+.cont-2{
+    background-color: white;
+    width: 350px;
+    height: 330px;
+    position: relative;
+    margin-left: 500px;
+    margin-top: 150px;
+    padding: 25px;
+    border-radius: 10px;
+    /* display: none; */
+
+    
+    
+    
+
+}
+.cont-2 h1{
+    color: hsl(234, 29%, 20%);
+
+}
+.icon-success img  {
+    width: 40px;
+}
+.dismiss{
+    width: 300px;
+    height: 40px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+.dismiss:hover{
+    background:hsl(4, 100%, 67%);
+    color:white ;
+}
+.comfirm p{
+    font-size: 14px;
+    padding: 20px 0px;
+    color: hsl(234, 29%, 20%);
+
+    
+
+}
+@media screen and (max-width:976px) {
+   .cont-2{
+    margin-left: 40%;
+    margin-top:20px;
+    height: 100vh;
+    /* padding-top: 80px; */
+
+    
+   } 
+   .comfirm{
+    padding-top: 20px;
+   }
+   .dismiss{
+    margin-top: 90px;
+    cursor: pointer;
+   }
+}
+@media screen and (max-width:590px) {
+    .cont-2{
+        margin: 0;
+        width: 100%;
+    }
+    .dismiss{
+        margin-top: 250px;
+    }
+}
+
+.email-name{
+    font-weight: 900;
+    font-size: 16px;
+}
